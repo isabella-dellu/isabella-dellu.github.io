@@ -650,7 +650,7 @@ nav ul li a {
   border: #d6d6d6 5px solid;
 }
 
-@media max-width(720px) {
+@media (max-width: 720px) {
   .img_service {
     width: 100%;
   }
