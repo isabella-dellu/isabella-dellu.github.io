@@ -10,6 +10,7 @@ var servicos = new Vue({
         .then(r => r.json())
         .then(servico => {
           this.servicos = servico.servicos
+          console.log(this.servicos)
         })
     },
   },
