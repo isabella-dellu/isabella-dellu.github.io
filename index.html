@@ -55,9 +55,12 @@
           <p>Esteticista Animal</p>
 
           <ul class="list-unstyled list-social">
-            <li><a href="https://www.facebook.com/bella.dellu" target="_blank"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/belldellu4/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=5512996683252" target="_blank"><i class="ion-social-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com/bella.dellu" target="_blank"><i class="ion-social-facebook"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/belldellu4/" target="_blank"><i class="ion-social-instagram"></i></a>
+            </li>
+            <li><a href="https://api.whatsapp.com/send?phone=5512996683252" target="_blank"><i
+                  class="ion-social-whatsapp"></i></a></li>
           </ul>
         </div>
       </div>
@@ -172,26 +175,28 @@
         </div>
 
         <div class="portfolio-container row">
-          <div v-for="certificado in certificados" class="row col-12 mx-0 portfolio-thumbnail allyears allinst"
-            :class="[certificado.ano, certificado.instituicao_cod]">
-            <img class="col-12 col-md-4" :src="certificado.imagem" :alt="certificado.nome">
+          <template v-for="certificado in certificados" >
+            <div class="row col-12 mx-0 portfolio-thumbnail allyears allinst"
+              :class="[certificado.ano, certificado.instituicao_cod]">
+              <img class="col-12 col-md-4" :src="certificado.imagem" :alt="certificado.nome">
 
-            <div class="col-12 col-md-8 p-4 text-left">
-              <h3 class="d-flex justify-content-between pb-2">
-                <div>
-                  {{certificado.nome}}
-                </div>
-                <div>
-                  {{certificado.ano}}
-                </div>
-              </h3>
-              <h4>{{certificado.instituicao}}</h4>
-              <p>{{certificado.descricao}}</p>
-              <a class="btn btn-dark" :href="certificado.imagem" data-lightbox="certificado"
-                :data-title="certificado.nome" > Ampliar Certificado
-              </a>
+              <div class="col-12 col-md-8 p-4 text-left">
+                <h3 class="d-flex justify-content-between pb-2">
+                  <div>
+                    {{certificado.nome}}
+                  </div>
+                  <div>
+                    {{certificado.ano}}
+                  </div>
+                </h3>
+                <h4>{{certificado.instituicao}}</h4>
+                <p>{{certificado.descricao}}</p>
+                <a class="btn btn-dark" :href="certificado.imagem" data-lightbox="certificado"
+                  :data-title="certificado.nome"> Ampliar Certificado
+                </a>
+              </div>
             </div>
-          </div>
+          </template>
         </div>
 
       </div>
@@ -257,9 +262,12 @@
         <div class="socials-media text-center">
 
           <ul class="list-unstyled">
-            <li><a href="https://www.facebook.com/bella.dellu" target="_blank"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/belldellu4" target="_blank"><i class="ion-social-instagram"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=5512996683252" target="_blank"><i class="ion-social-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com/bella.dellu" target="_blank"><i class="ion-social-facebook"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/belldellu4" target="_blank"><i class="ion-social-instagram"></i></a>
+            </li>
+            <li><a href="https://api.whatsapp.com/send?phone=5512996683252" target="_blank"><i
+                  class="ion-social-whatsapp"></i></a></li>
           </ul>
 
         </div>
